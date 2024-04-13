@@ -9,5 +9,5 @@ As pastas estão divididas em:
 - **Data:** dados brutos e processados 
 - **Docs:** documentação
   
-!(https://miro.medium.com/v2/resize:fit:1188/0*88QOi66U4uWTP1_Z.png)
+![Estrutura do projeto](https://github.com/Annallisboa/kobe_dataset/blob/main/framework%20tdsp.png)
   
