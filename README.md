@@ -10,4 +10,13 @@ As pastas estão divididas em:
 - **Docs:** documentação
   
 ![Estrutura do projeto](https://github.com/Annallisboa/kobe_dataset/blob/main/framework%20tdsp.png)
+
   
+## Como as ferramentas Streamlit, MLFlow, PyCaret e Scikit-Learn auxiliam na construção dos pipelines descritos anteriormente? A resposta deve abranger os seguintes aspectos:
+
+- **Rastreamento de Experimentos**: O MLFLOW permite o armazenamento de vários coisas automaticamente, sendo elas: parametros, métricas, artefatos e modelos treinados. Além disso, permite a comparação de métricas para decidir qual modelo é melhor. 
+- **Funções de Treinamento**: o Pycaret ajuda bastante na hora de treinar vários modelos ao mesmo tempo (apesar do consumo excessivo de CPU's), basta usar um comando como setup() para treinar vários modelos automaticamente. O sckit-learn ajuda no controle da pipeline de modelagem no pré-processamneto, validação cruzada e treino.
+- **Monitoramento da Saúde do Modelo**: O MLFLOW possui o histórico das métircas dos modelos, permitindo verificar como ele está performando ao longo do tempo. Para ter uma acompanhamento mais visual e disponivel para outros times, o Streamlit pode ser usado para montar dashboard e acompanhamentos das métricas totalmente customizavéis em tempo real. 
+- **Atualização do Modelo:** com Pycaret podemos re-treinar os dados juntamente com o MLFLOW que possui o controle das versões anteriores, podendo ser substituido, atualizado ou até mesmo reprocessar com novos dados.
+- **Deployment**: O MLFLOW consegue servir o modelo com uma API através de um unico comando, além disso, você pode "unir" ele ao Streamlit para disponibilizr o mesmo via uma interface simples da web, onde o usuário pode interagir com o modelo. 
+
